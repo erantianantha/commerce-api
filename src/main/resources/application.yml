@@ -7,6 +7,6 @@ server:
   port: 8080
 
 razorpay:
-  keyId: rzp_live_S65RI7ZRfslGLO
-  keySecret: kwTRk1NLskR2C244D4hk9NW9
-  webhookSecret: PASTE_WEBHOOK_SECRET
+  keyId: ${RAZORPAY_KEY_ID}
+  keySecret: ${RAZORPAY_KEY_SECRET}
+  webhookSecret: ${RAZORPAY_WEBHOOK_SECRET:dummy_webhook_secret}
